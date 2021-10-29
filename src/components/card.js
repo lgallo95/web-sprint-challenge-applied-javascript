@@ -62,10 +62,8 @@ const cardAppender = (selector) => {
   axios.get('http://localhost:5000/api/articles')
 
   .then(resp => {
-    let info = resp.data.articles
-    console.log(info)
-    cardz.appendChild(Card(selector))
 
+    
   })
   .catch(err => {
   console.error(err);
